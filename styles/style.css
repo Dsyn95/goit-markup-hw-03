@@ -1,0 +1,309 @@
+:root {
+  --bg-main: lightgrey;
+  --heads-color-text: #212121;
+  --main-color-text: #757575;
+  --actual-color-text: #2196f3;
+  --white-index: #ffffff;
+  --letter-spacing-main: 00.03em;
+  --footer-bg-color: #2f303a;
+}
+ul {
+  list-style: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 1600px;
+}
+header {
+  outline: 1px;
+  align-items: center;
+  background-color: var(--white-index);
+}
+.header {
+  outline: 1px solid tomato;
+  display: flex;
+  height: 80px;
+}
+.logo {
+  margin: 0 93px 0 215px;
+  outline: 1px solid tomato;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--actual-color-text);
+}
+.logo span {
+  color: var(--heads-color-text);
+}
+.main-nav {
+  display: flex;
+  padding: 0;
+  outline: 1px solid green;
+  list-style: none;
+  display: flex;
+}
+.main-nav li {
+  margin: 0 50px 0 0;
+}
+.main-nav li:last-child {
+  margin: 0;
+}
+.contacs-nav {
+  margin: 0 215px 0 0;
+  margin-left: auto;
+  padding: 0;
+  outline: 1px solid tomato;
+  list-style: none;
+  display: flex;
+}
+.main-nav li a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--heads-color-text);
+  text-decoration: none;
+}
+.main-nav li a:hover,
+.main-nav .active {
+  color: var(--actual-color-text);
+}
+.contacs-nav li {
+  margin: 0 50px 0 0;
+}
+.contacs-nav li:last-child {
+  margin: 0;
+}
+.contacs-nav a:hover {
+  color: var(--actual-color-text);
+}
+.address-bar {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--main-color-text);
+}
+.main-content {
+  outline: 1px solid saddlebrown;
+  height: 600px;
+  background-color: var(--footer-bg-color);
+}
+.main-content-text {
+  margin: 0 auto;
+  padding: 200px 0 0 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-index);
+}
+.main-button:hover,
+.main-button:focus {
+  background-color: #188ce8;
+  color: var(--white-index);
+}
+.main-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background-color: var(--actual-color-text);
+  color: var(--white-index);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+  box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+}
+.texts {
+  margin: 94px 0 0 0;
+  outline: 1px solid cyan;
+}
+.main-directions {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+}
+.main-directions li {
+  outline: 1px solid coral;
+  margin: 0 50px 0 0;
+}
+.main-directions li:last-child {
+  margin: 0;
+}
+.header-text {
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--heads-color-text);
+}
+.paragraph-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--main-color-text);
+}
+.activity {
+  margin: 94px 0 0 0;
+  outline: 1px solid chartreuse;
+}
+.topic {
+  margin: 0;
+  /* margin: 50px 0 0 0; */
+  list-style: none;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 700;
+}
+.applications {
+  display: flex;
+  /* margin-right: 10px; */
+  /* padding: 0;
+  margin: 0 auto; */
+  justify-content: space-between;
+}
+.applications li {
+  width: calc(100% / 3);
+  margin-left: 10px;
+}
+.section-staff {
+  margin: 0 auto;
+  margin: 94px 0 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  background-color: #f5f4fa;
+  outline: 1px solid coral;
+}
+.list_of_company_representatives {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+}
+.names {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* margin: 0; */
+}
+.post {
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+.footer-design {
+  background-color: var(--footer-bg-color);
+}
+.logo-footer {
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--actual-color-text);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo-footer span {
+  color: var(--white-index);
+}
+.physical-adress {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-index);
+}
+.footer-adress-bar a:hover {
+  color: #ffffff99;
+}
+.footer-adress-bar {
+  list-style: none;
+}
+/*Portfolio*/
+.portfolio-cards {
+  list-style: none;
+}
+.page-buttons {
+  list-style: none;
+}
+.button-filter:hover,
+.button-filter:focus {
+  outline-width: 0;
+  background-color: var(--actual-color-text);
+  color: var(--white-index);
+}
+.button-filter {
+  display: list-item;
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--heads-color-text);
+  border: none;
+}
+.article {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
