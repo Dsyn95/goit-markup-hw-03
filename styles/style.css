@@ -174,11 +174,12 @@ header {
   color: var(--main-color-text);
 }
 .activity {
-  margin: 94px 0 0 0;
+  /* margin: 94px 0 0 0; */
   outline: 1px solid chartreuse;
 }
 .topic {
   margin: 0;
+  /* padding-top: 94px; */
   /* margin: 50px 0 0 0; */
   list-style: none;
   text-align: center;
@@ -187,30 +188,42 @@ header {
 }
 .applications {
   display: flex;
-  /* margin-right: 10px; */
-  /* padding: 0;
-  margin: 0 auto; */
+  margin-top: 50px;
+  margin: 0 auto;
   justify-content: space-between;
 }
 .applications li {
   width: calc(100% / 3);
   margin-left: 10px;
 }
+/* .Staff */
 .section-staff {
-  margin: 0 auto;
-  margin: 94px 0 0 0;
+  margin-bottom: 94px;
+  padding: 94px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
   background-color: #f5f4fa;
   outline: 1px solid coral;
 }
-.list_of_company_representatives {
+.section-staff h2 {
+  margin-bottom: 50px;
+}
+.section-staff .list_of_company_representatives {
   display: flex;
   list-style: none;
   margin: 0 auto;
+  margin-left: 215px;
+  padding: 0;
 }
-.names {
+.list_of_company_representatives > li {
+  margin: 0 15px;
+  background-color: var(--white-index);
+  outline: 1px solid tomato;
+}
+.section-staff .names {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -218,10 +231,10 @@ header {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  /* margin: 0; */
 }
-.post {
-  margin: 0;
+.section-staff .post {
+  margin: 0 auto;
+  margin: 0 0 30px 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -231,7 +244,10 @@ header {
   letter-spacing: 0.03em;
   color: var(--main-color-text);
 }
-.footer-design {
+footer {
+  margin: 0 auto;
+}
+.footer-content {
   background-color: var(--footer-bg-color);
 }
 .logo-footer {
@@ -264,11 +280,22 @@ header {
   list-style: none;
 }
 /*Portfolio*/
-.portfolio-cards {
-  list-style: none;
+.portfolio-content {
+  margin: 94px auto;
+  outline: 1px solid darkcyan;
 }
 .page-buttons {
+  display: inline-flex;
+  margin: 0 0 50px 495px;
+  padding: 0;
+  text-align: center;
   list-style: none;
+}
+.page-buttons li {
+  margin-right: 8px;
+}
+.page-buttons li:last-child {
+  margin: 0;
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -289,7 +316,24 @@ header {
   color: var(--heads-color-text);
   border: none;
 }
-.article {
+.portfolio-cards {
+  margin: 0 215px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.portfolio-cards > li {
+  width: calc((100% - 60px) / 3);
+}
+.portfolio-cards > li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio-cards > li:not(:nth-last-child(n + 3)) {
+  margin-bottom: 30px;
+}
+.portfolio-cards .article {
+  margin: 20px 0 0 24px;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -298,7 +342,8 @@ header {
   letter-spacing: 0.06em;
   text-align: left;
 }
-.poster {
+.portfolio-cards .poster {
+  margin: 4px 0 0 24px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
