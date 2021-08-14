@@ -16,7 +16,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .container {
-  width: 1600px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 }
 header {
   outline: 1px;
@@ -213,7 +216,7 @@ header {
   display: flex;
   list-style: none;
   margin: 0 auto;
-  margin-left: 215px;
+  /* margin-left: 215px; */
   padding: 0;
 }
 .list_of_company_representatives > li {
@@ -244,7 +247,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--main-color-text);
 }
-footer {
+.footer-design {
   margin: 0 auto;
 }
 .footer-content {
