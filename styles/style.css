@@ -9,6 +9,8 @@
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 body {
   margin: 0;
@@ -17,9 +19,8 @@ body {
 }
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0 15px;
+  margin: 0 auto;
 }
 header {
   outline: 1px;
@@ -27,13 +28,13 @@ header {
   background-color: var(--white-index);
 }
 .header {
-  outline: 1px solid tomato;
   display: flex;
+  outline: 1px solid tomato;
   height: 80px;
 }
 .logo {
-  margin: 0 93px 0 215px;
   outline: 1px solid tomato;
+  margin-right: 90px;
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
@@ -60,7 +61,6 @@ header {
   margin: 0;
 }
 .contacs-nav {
-  margin: 0 215px 0 0;
   margin-left: auto;
   padding: 0;
   outline: 1px solid tomato;
@@ -104,6 +104,7 @@ header {
 .main-content {
   outline: 1px solid saddlebrown;
   height: 600px;
+  margin-bottom: 94px;
   background-color: var(--footer-bg-color);
 }
 .main-content-text {
@@ -139,8 +140,8 @@ header {
   box-shadow: 0 0 4px rgb(0 0 0 / 15%);
 }
 .texts {
-  margin: 94px 0 0 0;
   outline: 1px solid cyan;
+  margin-bottom: 87px;
 }
 .main-directions {
   padding: 0;
@@ -177,13 +178,12 @@ header {
   color: var(--main-color-text);
 }
 .activity {
-  /* margin: 94px 0 0 0; */
   outline: 1px solid chartreuse;
+  margin-bottom: 101px;
 }
 .topic {
-  margin: 0;
-  /* padding-top: 94px; */
-  /* margin: 50px 0 0 0; */
+  margin-top: 0;
+  margin-bottom: 50px;
   list-style: none;
   text-align: center;
   font-family: Roboto;
@@ -194,15 +194,18 @@ header {
   margin-top: 50px;
   margin: 0 auto;
   justify-content: space-between;
+  margin: 0 -15px;
 }
 .applications li {
-  width: calc(100% / 3);
-  margin-left: 10px;
+  display: block;
+  margin: 0 15px;
+  outline: 1px solid brown;
+  background-color: lime;
 }
 /* .Staff */
 .section-staff {
-  margin-bottom: 94px;
-  padding: 94px 0;
+  padding-top: 54px;
+  padding-bottom: 94px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
@@ -216,7 +219,6 @@ header {
   display: flex;
   list-style: none;
   margin: 0 auto;
-  /* margin-left: 215px; */
   padding: 0;
 }
 .list_of_company_representatives > li {
@@ -248,10 +250,10 @@ header {
   color: var(--main-color-text);
 }
 .footer-design {
-  margin: 0 auto;
+  background-color: var(--footer-bg-color);
 }
 .footer-content {
-  background-color: var(--footer-bg-color);
+  padding-top: 60px;
 }
 .logo-footer {
   text-decoration: none;
@@ -282,8 +284,7 @@ header {
 .footer-adress-bar {
   list-style: none;
 }
-/*Portfolio*/
-.portfolio-content {
+/Portfolio/ .portfolio-content {
   margin: 94px auto;
   outline: 1px solid darkcyan;
 }
