@@ -7,6 +7,14 @@
   --letter-spacing-main: 00.03em;
   --footer-bg-color: #2f303a;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 ul {
   list-style: none;
   padding: 0;
@@ -29,11 +37,11 @@ header {
 }
 .header {
   display: flex;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   height: 80px;
 }
 .logo {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   margin-right: 90px;
   text-decoration: none;
   font-family: Raleway;
@@ -50,7 +58,7 @@ header {
 .main-nav {
   display: flex;
   padding: 0;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   list-style: none;
   display: flex;
 }
@@ -63,7 +71,7 @@ header {
 .contacs-nav {
   margin-left: auto;
   padding: 0;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   list-style: none;
   display: flex;
 }
@@ -102,7 +110,7 @@ header {
   color: var(--main-color-text);
 }
 .main-content {
-  outline: 1px solid saddlebrown;
+  /* outline: 1px solid saddlebrown; */
   height: 600px;
   margin-bottom: 94px;
   background-color: var(--footer-bg-color);
@@ -140,8 +148,8 @@ header {
   box-shadow: 0 0 4px rgb(0 0 0 / 15%);
 }
 .texts {
-  outline: 1px solid cyan;
-  margin-bottom: 87px;
+  /* outline: 1px solid cyan; */
+  margin-bottom: 94px;
 }
 .main-directions {
   padding: 0;
@@ -150,7 +158,7 @@ header {
   list-style: none;
 }
 .main-directions li {
-  outline: 1px solid coral;
+  /* outline: 1px solid coral; */
   margin: 0 50px 0 0;
 }
 .main-directions li:last-child {
@@ -178,7 +186,7 @@ header {
   color: var(--main-color-text);
 }
 .activity {
-  outline: 1px solid chartreuse;
+  /* outline: 1px solid chartreuse; */
   margin-bottom: 101px;
 }
 .topic {
@@ -199,8 +207,8 @@ header {
 .applications li {
   display: block;
   margin: 0 15px;
-  outline: 1px solid brown;
-  background-color: lime;
+  /* outline: 1px solid brown; */
+  /* background-color: lime; */
 }
 /* .Staff */
 .section-staff {
@@ -210,7 +218,7 @@ header {
   font-weight: 500;
   line-height: 1.19;
   background-color: #f5f4fa;
-  outline: 1px solid coral;
+  /* outline: 1px solid coral; */
 }
 .section-staff h2 {
   margin-bottom: 50px;
@@ -224,7 +232,7 @@ header {
 .list_of_company_representatives > li {
   margin: 0 15px;
   background-color: var(--white-index);
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 .section-staff .names {
   margin-top: 30px;
@@ -249,6 +257,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--main-color-text);
 }
+/* .Footer */
 .footer-design {
   background-color: var(--footer-bg-color);
 }
@@ -269,7 +278,20 @@ header {
 .logo-footer span {
   color: var(--white-index);
 }
-.physical-adress {
+.footer-adress-bar {
+  list-style: none;
+}
+.footer-adress-bar a:hover {
+  color: #ffffff99;
+}
+.footer-adress-bar > li:not(:last-child) {
+  padding-bottom: 9px;
+}
+.footer-adress-bar > li:last-child {
+  padding-bottom: 60px;
+}
+.footer-adress-bar p {
+  margin: 20px 0 9px 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -278,19 +300,14 @@ header {
   letter-spacing: 0.03em;
   color: var(--white-index);
 }
-.footer-adress-bar a:hover {
-  color: #ffffff99;
-}
-.footer-adress-bar {
-  list-style: none;
-}
-/Portfolio/ .portfolio-content {
+/* /Portfolio/  */
+.portfolio-content {
   margin: 94px auto;
-  outline: 1px solid darkcyan;
+  /* outline: 1px solid darkcyan; */
 }
 .page-buttons {
   display: inline-flex;
-  margin: 0 0 50px 495px;
+  margin: 0 0 50px 295px;
   padding: 0;
   text-align: center;
   list-style: none;
@@ -303,6 +320,7 @@ header {
 }
 .button-filter:hover,
 .button-filter:focus {
+  cursor: pointer;
   outline-width: 0;
   background-color: var(--actual-color-text);
   color: var(--white-index);
@@ -321,19 +339,18 @@ header {
   border: none;
 }
 .portfolio-cards {
-  margin: 0 215px;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 .portfolio-cards > li {
   width: calc((100% - 60px) / 3);
+  border: 1px solid #eeeeee;
 }
 .portfolio-cards > li:not(:nth-child(3n)) {
   margin-right: 30px;
 }
-.portfolio-cards > li:not(:nth-last-child(n + 3)) {
+.portfolio-cards > li:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 .portfolio-cards .article {
