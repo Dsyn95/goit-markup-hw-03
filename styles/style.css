@@ -303,7 +303,7 @@ header {
 /* /Portfolio/  */
 .portfolio-content {
   margin: 94px auto;
-  /* outline: 1px solid darkcyan; */
+  outline: 1px solid darkcyan;
 }
 .page-buttons {
   display: inline-flex;
