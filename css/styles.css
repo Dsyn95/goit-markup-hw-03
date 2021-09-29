@@ -29,6 +29,10 @@ h6 {
   margin: 0;
   text-align: center;
 }
+.universal-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -60,12 +64,18 @@ p {
   font-weight: 400;
   color: var(--main-color-text);
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* Хедер */
 .navigation {
   display: flex;
   align-items: center;
 }
 .logo-header {
+  padding: 24px 0 25px 0;
   margin-right: 85px;
   text-decoration: none;
   font-family: Raleway;
@@ -85,6 +95,7 @@ a:visited.logo-header span {
   color: var(--heads-color-text);
 }
 .main-nav {
+  padding: 32px 0;
   list-style: none;
   display: flex;
   font-weight: 500;
@@ -136,15 +147,13 @@ a:visited.logo-header span {
 /* Секция Hero */
 .section-hero {
   /* outline: 1px solid saddlebrown; */
-  height: 600px;
+  padding: 200px 0;
+  /* height: 600px; */
   width: 100%;
-  /* margin-bottom: 94px; */
   background-color: var(--footer-bg-color);
 }
 .section-hero > div > h1 {
   margin: 0 auto;
-  padding: 200px 236.5px 0 236.5px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -152,11 +161,6 @@ a:visited.logo-header span {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--snow-index);
-}
-.main-button:hover,
-.main-button:focus {
-  background-color: #188ce8;
   color: var(--snow-index);
 }
 .main-button {
@@ -167,47 +171,55 @@ a:visited.logo-header span {
   width: 200px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  cursor: pointer;
   background-color: var(--actual-color-text);
   color: var(--snow-index);
-  /* border-radius: 4px; */
+  border: 0px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 0 4px rgb(0 0 0 / 15%);
   box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+}
+.main-button:hover,
+.main-button:focus {
+  background-color: #188ce8;
+  color: var(--snow-index);
 }
 /* Секция Скиллы */
 .section-skills {
   padding: 94px 15px;
 }
-.section-skills h3 {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: var(--heads-color-text);
-  font-weight: 700;
-  line-height: 1.14;
-  text-align: left;
-}
-.section-skills p {
-  margin: 0 auto;
-}
-.section-skills > ul {
-  display: flex;
-  margin: 0 -15px;
-}
-.section-skills > ul > li {
-  margin: 0 15px;
-}
 .main-directions {
+  display: flex;
   list-style: none;
 }
-.header-text {
-  margin-bottom: 10px;
+.main-directions > li {
+  width: calc((100% - 60px) / 4);
+}
+.main-directions > li:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+.main-directions > li:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+.main-directions h3 {
+  text-align: left;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--heads-color-text);
 }
+.main-directions p {
+  margin: 10px 0 0 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+
 .paragraph-text {
   font-size: 14px;
   font-style: normal;
@@ -241,17 +253,22 @@ a:visited.logo-header span {
   line-height: 1.19;
   background-color: #f5f4fa;
 }
-.section-staff ul {
+.list_of_company_representatives {
   display: flex;
-  margin: 0 -15px;
-}
-.section-staff ul li {
-  margin: 0 15px;
 }
 .list_of_company_representatives li {
   background-color: var(--snow-index);
   border-radius: 0 0 4px 4px;
-  /* outline: 1px solid tomato; */
+}
+.list_of_company_representatives > li {
+  width: calc((100% - 60px) / 4);
+  /* border: 1px solid #eeeeee; */
+}
+.list_of_company_representatives > li:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+.list_of_company_representatives > li:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
 }
 .topic {
   margin-bottom: 50px;
@@ -262,9 +279,10 @@ a:visited.logo-header span {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.employee-info {
+  padding: 30px 0;
+}
 .names {
-  padding-top: 30px;
-  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.19;
@@ -272,8 +290,7 @@ a:visited.logo-header span {
   letter-spacing: 0.03em;
 }
 .post {
-  margin: 0;
-  padding-bottom: 30px;
+  margin: 10px 0 0 0;
   font-style: normal;
   font-weight: 400;
   line-height: 1.19;
@@ -316,16 +333,17 @@ a:visited.logo-header span {
   margin-top: 9px;
 }
 .footer-adress-bar > li {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 /*Portfolio*/
 .portfolio-info {
-  padding: 0 0 94px 0;
+  padding-top: 100px;
+  padding-bottom: 94px;
 }
 .page-buttons {
   display: flex;
+  margin-bottom: 50px;
   justify-content: center;
-  padding: 94px 0 50px 0;
   text-align: center;
   list-style: none;
 }
@@ -340,7 +358,7 @@ a:visited.logo-header span {
   cursor: pointer;
   outline-width: 0;
   background-color: var(--actual-color-text);
-  color: var(--white-index);
+  color: var(--snow-index);
 }
 .button-filter {
   display: list-item;
@@ -355,6 +373,11 @@ a:visited.logo-header span {
   color: var(--heads-color-text);
   border: none;
 }
+.active button {
+  color: var(--snow-index);
+  background-color: var(--actual-color-text);
+}
+/* }   После доработки убрать! */
 /* Cards */
 .portfolio-cards {
   display: flex;
@@ -362,7 +385,7 @@ a:visited.logo-header span {
 }
 .portfolio-cards > li {
   width: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
 }
 .portfolio-cards > li:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -385,4 +408,6 @@ a:visited.logo-header span {
 }
 .card-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
